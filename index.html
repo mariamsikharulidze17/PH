@@ -58,9 +58,23 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 @keyframes fadeUp{from{opacity:0;transform:translateY(50px);}to{opacity:1;transform:translateY(0);}}
 .hero-tag{font-size:0.7rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;}
 .hero-tag::before{content:'';width:40px;height:1px;background:var(--gold);}
-.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6.5vw,5.5rem);font-weight:300;line-height:1.08;margin-bottom:0.2rem;}
-.hero-h1 strong{font-weight:700;color:var(--gold);}
-.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:600;line-height:1.05;margin-bottom:2rem;font-style:italic;}
+.hero-h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4.2vw, 3.5rem); 
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+.hero-h1 strong { font-weight: 700; color: var(--gold); }
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 3.8vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: var(--gold);
+}
 .hero-desc{font-size:0.95rem;line-height:1.9;color:rgba(242,237,230,0.6);max-width:420px;margin-bottom:2.8rem;}
 .hero-btns{display:flex;gap:1.2rem;align-items:center;}
 .btn-primary{display:inline-flex;align-items:center;gap:0.7rem;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:0.9rem 2.2rem;font-family:'Jost',sans-serif;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;cursor:none;transition:all 0.3s;text-decoration:none;}
