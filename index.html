@@ -21,24 +21,23 @@
 html{scroll-behavior:smooth;}
 body{background:var(--dark);color:var(--text);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;cursor:none;}
 
-
-/* CUSTOM CURSOR - Bulletproof Golden Camera */
+/* CUSTOM CURSOR - Tiny Pixel Kitten */
 .cursor {
   position: fixed;
-  width: 28px;
-  height: 28px;
+  /* ზომა კნუტისთვის */
+  width: 32px;
+  height: 32px;
   background: none;
-  /* ოქროსფერი ფოტოაპარატის ჩაშენებული ვექტორული კოდი */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8a96e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E");
+  /* მოძრავი პატარა კნუტის ანიმაცია */
+  background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3AwaWJidG5oM3A4ZWQzYnBnbXN6bTZubXdrbWpsY3pveG53eXhveCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8g7S86db4zUksl5gTu/giphy.gif');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.08s ease-out;
+  transition: transform 0.05s ease-out;
 }
-
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 3.5rem;height:72px;background:rgba(8,7,5,0.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
 .logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;letter-spacing:0.22em;font-weight:300;color:var(--text);text-decoration:none;}
