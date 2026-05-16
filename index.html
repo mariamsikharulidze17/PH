@@ -22,7 +22,25 @@ html{scroll-behavior:smooth;}
 body{background:var(--dark);color:var(--text);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden;cursor:none;}
 
 /* CUSTOM CURSOR */
-.cursor{position:fixed;width:8px;height:8px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform 0.1s;}
+/* CUSTOM CURSOR - Sony camera animation */
+.cursor {
+  position: fixed;
+  /* გაზრდილი ზომა, რომ აპარატი გამოჩნდეს */
+  width: 24px;
+  height: 24px;
+  /* მონიშნული ოქროსფერი წერტილის ნაცვლად */
+  background: none;
+  /* ჩამატებულია ანიმაციური სონის აპარატის სურათი */
+  background-image: url('https://i.ibb.co/6803704/sony-camera.gif');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s;
+}
+/* CUSTOM CURSOR RING - remain the same */
 .cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(200,169,110,0.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all 0.15s ease;}
 .cursor-ring.hover{width:56px;height:56px;border-color:var(--gold);}
 
